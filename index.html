@@ -1,0 +1,142 @@
+<!-- ! -->
+<!-- html:5 -->
+<!-- Doctype declation defines the type of document -->
+<!DOCTYPE html>
+<!-- html tag contains every other tag, rep. root of html document -->
+<html lang="en">
+<!--head tag contains contents of the html doc that are not displayed in the web page-->
+<head>
+    <!-- meta tag contains descriptors that help search engines; 
+        to specifies char. encoding, how website will behave, scale across various device -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title tag specifies the title of the document -->
+    <title>First Page</title>
+    <!--link tag connects the current doc to an external resource -->
+    <link rel="stylesheet" href="style.css">
+    <!-- script tag links the current doc to an external script -->
+    <script src="first.js"></script>
+</head> 
+<!--body tag contains the content of the html doc that is displayed in the web page-->
+<body>
+    <!-- A webpage’s content is usually divided into blocks, specified by the div tag. -->
+    <div>
+        <!-- A tag is a char. wrapped in angular brackets used to define a particular type of content in a webpage -->
+        <!-- opening and closing tags -->
+        <div>This is our first HTML Document</div>
+         <!-- Six different variations of writing a heading h1 has the largest font size, while h6 has the smallest. -->
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+        <h5>This is heading 5</h5>
+        <h6>This is heading 6</h6>
+        <p>This is a paragraph</p>
+        <!-- self enclosing tags / empty elements -->
+        <img src="instagram.png" alt="instagram image" height="100px" width="100px">
+        <!-- A line break for webpages. Is used when wanting to write a new line -->
+        <br>
+        <!-- Similar to the above tag. But in addition to switching to the next line, this tag also draws a horizontal bar to indicate the end of the section -->
+        <hr>
+    </div>
+
+    <div>
+        <!-- an element is a collection of an open tag, it's attribute, the close tag and everything in between -->
+        <h1 class="heading-one">HTML ELEMENTS</h1>
+        <p id="para1">This is a paragraph</p>
+        <!-- not case senstive -->
+        <P>Another paragraph</P>
+    </div>
+
+    <div>
+        <!-- Attributes are additional properties of an element -->
+        <!-- class - is not unique or peculiar to an element; 
+            style - is used in the html for quick styling or testing purposes -->
+        <h1 class="heading-one" style="color: gold";>HTML ATTRIBUTES</h1>
+        <!-- id - is unique to an element;  -->
+        <p id="blue-para">Basic example of elements in HTML</p>
+        <style>
+            #blue-para {
+                color: blue;
+            }
+        </style>
+        <!-- img src - specify source of image; 
+            alt - for when images are not rendered in browser; 
+            height and width - to specify image size -->
+        <img src="images/biz-card.png" alt="" height="300px" width="300px">
+    </div>
+
+    <div>
+        <!-- Formatting tags - used to make text more appealing -->
+        <h1>HTML FORMATTING TAGS</h1>
+        <b>A bold text</b> <br><br>
+        <strong>Another bold text but with emphasis</strong> <br><br>
+        <i>A text with italics</i> <br><br>
+        <i>Another italicised text but emphasis</i> <br><br>
+        <del>A deleted text</del> <br><br> 
+        <u>An underlined text</u> <br><br>
+        <!-- Denotes text that has been inserted into the webpage. -->
+        <p>This text was <ins>inserted</ins></p>
+        <!-- Reduces text size. In HTML5, it often refers to redundant or invalid information -->
+        <p>I'm not a <small>small</small> boy</p> 
+        <!-- Used for writing a superscript (bigger font just above the mid-point of normal font -->
+        <p>1<sup>st</sup> March</p>      
+        <!-- Used for writing a subscript (smaller font just below the mid-point of normal font -->
+        <p>1<sub>st</sub> March</p>
+        <!-- html nesting of elements -->
+        <p>A <b>bolded text</b></p>
+        <p>A <b>bolded</b> and <u>underlined</u> text</p>
+        <p>A <b>bolded</b>, <u>underlined</u> and <del>deleted</del> text</p>
+        <p>A <b><u><del>TEXT</del></u></b> with bold, underline and delete formatting tag </p>
+        <!-- This is used to display code snippets within a paragraph. -->
+        <code>
+            for(i=0; i < 3; i++) <br>
+            { <br>
+                console.log("Hi"); <br>
+            } <br>
+        </code>
+        <p>
+            for(i=0; i < 3; i++) <br>
+            { <br>
+                console.log("Hi"); <br>
+            } <br>
+        </p>
+
+        <!-- Quotes often go into this tag. Is used in tandem with the cite tag used for citing author of a quote -->
+        <blockquote>
+        Anyone who has never made a mistake has never
+        tried anything new.<cite>- Albert Einstein</cite>
+        </blockquote>
+        <pre>
+        Some pre-formatted text
+        </pre>
+        <!-- Tag for specifying author’s contact details -->
+        <address>
+            <p>Location: </p>
+            Youtube Office,
+            12 Okpara Avenue
+            Holyghost, Enugu
+        </address>
+    </div>
+    
+
+    <div>
+        <!--Phrase Tags - used to give structural meaning to a block of text. 
+            The title attribute differentiates it from the formatting tags -->
+        <h1>Phrase Tags in HTML</h1>
+
+        <p>Please subscribe to my <em title="Check out my Youtube channel">Youtube </em>channel</p>
+        
+        <p>Please subscribe to my <mark title="Check out my Youtube channel">Youtube </mark>channel</p>
+
+        <p>Please subscribe to my <abbr title="Youtube">YT </abbr>channel</p>
+
+        <p>Please subscribe to my <q title="Youtube">YT </q>channel</p>
+
+
+    </div>
+
+
+</body>
+</html>
