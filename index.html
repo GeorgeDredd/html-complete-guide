@@ -132,7 +132,7 @@
     <div>
         <!--Phrase Tags - used to give structural meaning to a block of text. 
             The title attribute differentiates it from the formatting tags -->
-        <h1>Phrase Tags in HTML</h1>
+        <h1 id="phrase">Phrase Tags in HTML</h1>
 
         <p>Please subscribe to my <em title="Check out my Youtube channel">Youtube </em>channel</p>
         
@@ -188,29 +188,82 @@
             </tr>
         </table>
 
-        <table border="1px">
+        <table border="1px" bordercolor="red">
         <caption>George's Restaurant</caption>
-            <tr>
-                <th>S/N</th>
-                <th>Item</th>
-                <th>Price</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Bread</td>
-                <td># 2000</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Biscuits</td>
-                <td># 1200</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Hamburger</td>
-                <td># 3500</td>
-            </tr>
+        <tr>
+            <th>S/N</th>
+            <th>Item</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Bread</td>
+            <td># 2000</td>
+        </tr>
+        <tr>
+            <!-- to merge two or more rows -->
+            <td rowspan="2">2</td>
+            <td>Biscuits</td>
+            <td># 1200</td>
+        </tr>
+        <tr>
+            <!-- <td>3</td> -->
+            <td>Hamburger</td>
+            <td># 3500</td>
+        </tr>
+        <tr bgcolor="red">
+            <!-- to merge two or more columns -->
+            <td colspan="2">Grand Total</td>
+            <td>#6700</td>
+        </tr>
         </table>
+    </div>
+
+    <div>
+        <!--LISTS - to group related pieces of info. so they are associated to each other and easy to read -->
+        <h1>HTML LISTS</h1>
+        <!-- ordered list - uses notations that indicate a series of items;
+        types = 1, A, a, I, i -->
+        <ol type="" start="5">
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Banana</li>
+            <li>Orange</li>
+        </ol>
+
+        <!-- unordered list - items with no special order or sequence;
+        types = circle, bullet, square -->
+        <ul type="square">
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Banana</li>
+            <li>Orange</li>
+        </ul>
+
+        <!-- description list - consists of a desc term and definition -->
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hyper Text Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheet</dd>
+        </dl>
+    </div>
+
+    <div>
+    
+        <h1>HTML TEXT-LINKS</h1> 
+        <p>Links -  help us to navigate between a webpage or from one webpage to another</p>
+        <!-- anchor tag - is used to spectify a link -->
+        <a href="#">Click me</a>
+        <p>Types - Relative and Absolute</p> 
+        <p>Absolute - when the full addreess is specified e.g
+        <a href="https://www.google.com">Google</a> 
+        </p>
+
+        <p>Relative -References to a local link i.e a link to a page within same website e.g <br>
+        <a href="about.html" target="_self">About Us</a> <br>
+        <a href="#phrase" alink="red" vlink="yellow">Link to Phrase Tags</a>
+        </p>
     </div>
 
 
